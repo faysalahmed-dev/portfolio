@@ -1,13 +1,34 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "nuxt": "3.0.0"
-  }
+    "author": {
+        "email": "faysalahmed.dev@gmail.com",
+        "name": "Faysal Ahmed",
+        "url": "https://github.com/faysal146"
+    },
+    "packageManager": "pnpm@7.12.2",
+    "description": "",
+    "displayName": "Faysal Ahmed",
+    "engines": {
+        "node": "16.18.1"
+    },
+    "keywords": [
+        "faysal ahmed",
+        "portfolio"
+    ],
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/faysal146/portfolio.git"
+    },
+    "name": "faysal-ahmed-portfolio",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "nuxt": "3.0.0"
+    }
 }
