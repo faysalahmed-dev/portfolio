@@ -7,6 +7,7 @@
     </main>
     <About />
     <Skills />
+    <Services />
 </template>
 <style scoped>
 .hero-bg {
