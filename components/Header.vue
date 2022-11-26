@@ -1,6 +1,6 @@
 <template>
     <header class="flex justify-between py-10">
-        <h3 class="text-xl font-bold">Faysal Ahmed</h3>
+        <h3 class="text-xl font-bold logo">Faysal Ahmed</h3>
         <div>
             <ul class="flex justify-between space-x-5 font-bold">
                 <li><a href="">About Me</a></li>
@@ -15,3 +15,18 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+.logo {
+    color: var(--yello-light);
+    background: linear-gradient(
+        45deg,
+        var(--yello-light) 30%,
+        var(--acen-light) 70%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+</style>
