@@ -9,6 +9,7 @@
     <Skills />
     <Services />
     <Projects />
+    <Testimonial />
 </template>
 <style scoped>
 .hero-bg {
