@@ -3,7 +3,7 @@
         <div class="container mx-auto">
             <UtilsSectionHeading> My Skills </UtilsSectionHeading>
             <div class="flex justify-between space-x-10">
-                <div class="w-1/2 rounded-md p-10 bg-slate-900">
+                <div class="flex-1 rounded-md p-10 bg-slate-900">
                     <h2 class="text-center font-bold mb-10">
                         Font End Development
                     </h2>
@@ -32,7 +32,7 @@
                         />
                     </ul>
                 </div>
-                <div class="w-1/2 rounded-md p-10 bg-slate-900">
+                <div class="flex-1 rounded-md p-10 bg-slate-900">
                     <h2 class="text-center font-bold mb-10">
                         Back End Development
                     </h2>
