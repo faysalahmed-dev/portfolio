@@ -5,6 +5,7 @@
             <Hero />
         </div>
     </main>
+    <About />
 </template>
 <style scoped>
 .hero-bg {
@@ -14,7 +15,8 @@
             rgba(0, 0, 0, 0.547)
         ),
         url('~/assets/images/hero-bg.jpg') no-repeat center/cover;
-    background-attachment: fixed;
+
+    /* background-attachment: fixed; */
     width: 100%;
 }
 </style>
