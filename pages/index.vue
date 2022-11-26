@@ -6,6 +6,7 @@
         </div>
     </main>
     <About />
+    <Skills />
 </template>
 <style scoped>
 .hero-bg {
