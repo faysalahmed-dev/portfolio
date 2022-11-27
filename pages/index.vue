@@ -11,6 +11,7 @@
     <Projects />
     <Testimonial />
     <Contact />
+    <Footer />
 </template>
 <style scoped>
 .hero-bg {
