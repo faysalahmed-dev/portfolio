@@ -15,18 +15,3 @@
         </div>
     </header>
 </template>
-
-<style scoped>
-.logo {
-    color: var(--yello-light);
-    background: linear-gradient(
-        45deg,
-        var(--yello-light) 30%,
-        var(--acen-light) 70%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-</style>
