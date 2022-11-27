@@ -10,6 +10,7 @@
     <Services />
     <Projects />
     <Testimonial />
+    <Contact />
 </template>
 <style scoped>
 .hero-bg {
