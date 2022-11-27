@@ -7,8 +7,12 @@
     --acen-light: #60f7ea;
 }
 body {
-    background: rgb(47, 7, 67);
-    background: linear-gradient(to right, rgb(65, 41, 90), rgb(47, 7, 67));
+    background: #433457;
+    background-image: linear-gradient(
+        179.4deg,
+        rgba(12, 20, 69, 1) -16.9%,
+        rgba(71, 30, 84, 1) 119.9%
+    );
     @apply text-gray-300;
 }
 
@@ -23,5 +27,9 @@ body {
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
     text-transform: uppercase;
+}
+.bg-primary {
+    background: #fd94df;
+    @apply text-gray-900;
 }
 </style>
