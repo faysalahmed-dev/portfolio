@@ -1,6 +1,6 @@
 <template>
     <section class="container mx-auto">
-        <UtilsSectionHeading> Testimonial </UtilsSectionHeading>
+        <SectionHeading> Testimonial </SectionHeading>
         <div class="w-8/12 mx-auto">
             <carousel :itemsToShow="1" :wrapAround="true" :transition="500">
                 <slide v-for="slide in slideItems" :key="slide.client">

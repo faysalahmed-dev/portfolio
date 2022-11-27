@@ -1,8 +1,8 @@
 <template>
     <section class="container mx-auto">
-        <UtilsSectionHeading>Projects</UtilsSectionHeading>
+        <SectionHeading>Projects</SectionHeading>
         <div class="flex space-x-8 max-w-[1000px] mx-auto">
-            <UtilsProjectsCard
+            <ProjectsCard
                 v-for="project in projects"
                 :key="project.text"
                 :project="project"

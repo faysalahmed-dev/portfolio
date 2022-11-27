@@ -2,7 +2,7 @@
     <section
         class="w-[1100px] mx-auto rounded-3xl py-20 px-16 about-section -mt-20"
     >
-        <UtilsSectionHeading>About Me</UtilsSectionHeading>
+        <SectionHeading>About Me</SectionHeading>
         <div class="flex">
             <div class="w-2/4 flex justify-center items-center">
                 <NuxtImg src="/images/faysalahmed.png" width="350" />

@@ -1,16 +1,13 @@
 <template>
     <section class="container mx-auto">
-        <UtilsSectionHeading>Skills</UtilsSectionHeading>
+        <SectionHeading>Skills</SectionHeading>
         <div class="flex space-x-8">
-            <UtilsServicesCard
+            <ServicesCard
                 title="Website Development"
                 :items="items.websiteDev"
             />
-            <UtilsServicesCard
-                title="Font End Development"
-                :items="items.fontEnd"
-            />
-            <UtilsServicesCard
+            <ServicesCard title="Font End Development" :items="items.fontEnd" />
+            <ServicesCard
                 title="Full Stack Development"
                 :items="items.backEnd"
             />
