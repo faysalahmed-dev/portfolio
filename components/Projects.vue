@@ -1,7 +1,7 @@
 <template>
-    <section class="container mx-auto">
-        <SectionHeading>Projects</SectionHeading>
-        <div class="flex space-x-8 max-w-[1000px] mx-auto">
+    <section class="container mx-auto" id="projects">
+        <SectionHeading text="What I Build">Projects</SectionHeading>
+        <div class="flex space-x-8 max-w-[1100px] mx-auto">
             <ProjectsCard
                 v-for="project in projects"
                 :key="project.text"

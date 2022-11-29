@@ -1,11 +1,11 @@
 <template>
     <footer
-        class="w-11/12 mx-auto rounded-t-3xl px-10 pb-8 pt-10 mt-10 bg-slate-900"
+        class="container mx-auto rounded-t-3xl px-10 pb-8 pt-10 mt-10 bg-slate-900"
     >
         <div class="flex justify-between mb-8">
             <h2 class="font-bold logo">Faysal Ahmed</h2>
             <div class="flex space-x-4 items-center">
-                <a href="">
+                <a target="_blank" href="https://github.com/faysal146">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -20,7 +20,10 @@
                         ></path>
                     </svg>
                 </a>
-                <a href="">
+                <a
+                    href="https://www.linkedin.com/in/faysalahmedhridoy"
+                    target="_blank"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -34,7 +37,10 @@
                         ></path>
                     </svg>
                 </a>
-                <a href="">
+                <a
+                    href="https://www.upwork.com/freelancers/~018852d8ff84d72f35"
+                    target="_blank"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
@@ -82,3 +88,13 @@
         </div>
     </footer>
 </template>
+
+<style scoped>
+footer {
+    background-image: linear-gradient(
+        179.4deg,
+        rgba(12, 20, 69, 1) -16.9%,
+        rgba(71, 30, 84, 1) 119.9%
+    );
+}
+</style>

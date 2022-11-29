@@ -1,10 +1,12 @@
 <template>
     <section class="container mx-auto">
-        <SectionHeading> Testimonial </SectionHeading>
+        <SectionHeading text="What Client Said About Me">
+            Testimonial
+        </SectionHeading>
         <div class="w-8/12 mx-auto">
             <carousel :itemsToShow="1" :wrapAround="true" :transition="500">
                 <slide v-for="slide in slideItems" :key="slide.client">
-                    <div class="text-center p-16 w-5/6 bg-gray-700 rounded-md">
+                    <div class="text-center p-16 w-5/6 rounded-md">
                         <p class="mb-3 relative">
                             {{ slide.text }}
                         </p>
@@ -46,4 +48,14 @@ const slideItems = [
 ];
 </script>
 
-<style></style>
+<style>
+:root {
+    --vc-pgn-active-color: rgba(255, 255, 255, 0.808);
+    --vc-pgn-background-color: rgba(255, 255, 255, 0.281);
+}
+.carousel__prev,
+.carousel__next {
+    color: rgba(255, 255, 255, 0.808);
+    /* --vc-pgn-background-color */
+}
+</style>

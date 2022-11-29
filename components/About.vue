@@ -1,8 +1,9 @@
 <template>
     <section
-        class="max-w-[1100px] mx-auto rounded-[50px] py-10 px-16 about-section -mt-20"
+        id="about-me"
+        class="max-w-[1100px] mx-auto rounded-[50px] py-10 px-16 about-section -mt-20 relative z-10"
     >
-        <SectionHeading>About Me</SectionHeading>
+        <SectionHeading text="" margin="my-8">About Me</SectionHeading>
         <div class="flex py-6">
             <div class="flex-1 flex justify-center items-center">
                 <NuxtImg src="/images/faysalahmed.png" width="350" />
@@ -74,9 +75,13 @@
                     that work across all platforms & devices.
                 </p>
                 <div class="space-x-6">
-                    <button class="py-2 px-8 rounded-lg bg-primary font-bold">
+                    <a
+                        target="_blank"
+                        href="https://wa.me/+8801997261058"
+                        class="py-2 px-8 rounded-lg bg-primary font-bold"
+                    >
                         Let's Talk
-                    </button>
+                    </a>
                     <button class="py-2 px-8 rounded-lg bg-primary font-bold">
                         Download CV
                     </button>

@@ -1,7 +1,7 @@
 <template>
-    <section class="container mx-auto">
-        <SectionHeading>Skills</SectionHeading>
-        <div class="flex space-x-8">
+    <section id="service" class="container mx-auto">
+        <SectionHeading text="what i will do">Services</SectionHeading>
+        <div class="flex space-x-8 max-w-[1100px] mx-auto">
             <ServicesCard
                 title="Website Development"
                 :items="items.websiteDev"
