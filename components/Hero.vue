@@ -15,7 +15,8 @@
                 reprehenderit facere.
             </p>
             <a
-                href="/"
+                target="_blank"
+                href="https://www.upwork.com/freelancers/~018852d8ff84d72f35"
                 class="mt-5 bg-primary py-2 px-5 rounded-lg font-bold inline-block"
             >
                 Hire Me
