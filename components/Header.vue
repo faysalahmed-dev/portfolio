@@ -3,14 +3,14 @@
         <h3 class="text-xl font-bold logo">Faysal Ahmed</h3>
         <div>
             <ul class="flex justify-between space-x-5 font-bold">
-                <li><a href="">About Me</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Service</a></li>
+                <li><nuxt-link href="#about-me">About Me</nuxt-link></li>
+                <li><nuxt-link href="#skills">Skills</nuxt-link></li>
+                <li><nuxt-link href="#service">Service</nuxt-link></li>
                 <!-- <li><a href="">Experiences</a></li> -->
-                <li><a href="">Recent Work</a></li>
+                <li><nuxt-link href="#projects">Recent Work</nuxt-link></li>
                 <!-- <li><a href="">Client Review</a></li> -->
                 <!-- <li><a href="">Recent Post</a></li> -->
-                <li><a href="">Get In Touch</a></li>
+                <li><nuxt-link href="#contact">Get In Touch</nuxt-link></li>
             </ul>
         </div>
     </header>
