@@ -33,3 +33,6 @@ body {
     @apply text-gray-900;
 }
 </style>
+<script>
+import 'swiper/css';
+</script>
