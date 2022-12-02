@@ -9,10 +9,55 @@
             >
                 Welcome to my Portfolio
             </button>
-            <h1 class="text-6xl my-8">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl my-4 md:my-6 lg:my-8">
                 Hi I'M <span class="logo">Faysal</span>
             </h1>
-            <p class="w-[80%] lg:w-1/2">
+            <div class="flex items-center mb-4">
+                <h1 class="text-lg md:text-xl">And I'M</h1>
+                <swiper
+                    :slides-per-view="1"
+                    direction="vertical"
+                    :allowTouchMove="false"
+                    :height="sliderItemHeight + 5"
+                    :loop="true"
+                    :speed="500"
+                    :autoplay="{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }"
+                    :modules="[Autoplay]"
+                    class="text-xl md:text-2xl lg:text-3xl overflow-hidden"
+                    :style="`margin-right: 0; margin-left: 10px; height: ${
+                        sliderItemHeight + 5
+                    }px; `"
+                >
+                    <swiper-slide>
+                        <span
+                            class="slider-caption inline-block font-bold"
+                            ref="slideItem"
+                        >
+                            Font End Developer
+                        </span>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <span class="slider-caption inline-block font-bold">
+                            Vue JS Developer
+                        </span>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <span class="slider-caption inline-block font-bold">
+                            Full Stack Developer
+                        </span>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <span class="slider-caption inline-block font-bold">
+                            Freelancer
+                        </span>
+                    </swiper-slide>
+                </swiper>
+            </div>
+            <!-- :allowTouchMove="false" -->
+            <p class="w-[80%]">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
                 maxime consectetur ipsum dolorum veniam saepe quia vero numquam
                 reprehenderit facere.
@@ -32,7 +77,17 @@
         </div>
     </div>
 </template>
-
+<script lang="ts" setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper';
+const sliderItemHeight = ref(0);
+const slideItem = ref<HTMLSpanElement | null>(null);
+onMounted(() => {
+    if (slideItem.value) {
+        sliderItemHeight.value = slideItem.value.clientHeight;
+    }
+});
+</script>
 <style scoped>
 .welcome-btn {
     background: #433457;
@@ -41,5 +96,8 @@
         rgba(12, 20, 69, 1) -16.9%,
         rgba(71, 30, 84, 1) 119.9%
     );
+}
+.slider-caption {
+    color: var(--acen-light);
 }
 </style>
