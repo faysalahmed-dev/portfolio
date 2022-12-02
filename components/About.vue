@@ -33,7 +33,7 @@
                         <p>3+ years</p>
                     </div>
                     <div
-                        class="py-3 sm:w-36 text-sm rounded-lg about-small-box text-center"
+                        class="py-3 w-24 sm:w-36 text-sm rounded-lg about-small-box text-center"
                     >
                         <svg
                             class="inline-block mb-2"
@@ -51,7 +51,7 @@
                         <p>10 +</p>
                     </div>
                     <div
-                        class="py-3 sm:w-36 text-sm rounded-lg about-small-box text-center"
+                        class="py-3 w-24 sm:w-36 text-sm rounded-lg about-small-box text-center"
                     >
                         <svg
                             class="inline-block mb-2"
