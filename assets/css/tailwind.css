@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
+
+.navigation {
+    background: rgba(7, 3, 53, 1);
+    background-image: radial-gradient(
+        circle 610px at 5.2% 51.6%,
+        rgba(5, 8, 114, 1) 0%,
+        rgba(7, 3, 53, 1) 97.5%
+    );
+    @apply fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center space-y-6 z-50;
+}
+
+@media screen(md) {
+    .navigation {
+        background: transparent;
+        background-image: none;
+        @apply static h-auto flex-row space-x-6 space-y-0;
+    }
+}
+
+.nav-md {
+    /* @apply  */
+}
+
 @tailwind utilities;
