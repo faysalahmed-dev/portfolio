@@ -1,15 +1,18 @@
 <template>
-    <div class="flex pt-10 pb-44 mt-24 max-w-6xl mx-auto">
-        <div class="w-[50%]">
+    <!--  -->
+    <div
+        class="flex mt-16 md:flex-col-reverse lg:flex-row lg:pt-10 lg:pb-44 lg:mt-24 lg:max-w-6xl"
+    >
+        <div>
             <button
-                class="welcome-btn py-2 px-3 rounded-lg font-bold cursor-default"
+                class="welcome-btn py-2 px-3 rounded-lg font-bold cursor-default lg:flex-1"
             >
                 Welcome to my Portfolio
             </button>
             <h1 class="text-6xl my-8">
                 Hi I'M <span class="logo">Faysal</span>
             </h1>
-            <p class="w-[70%]">
+            <p class="w-[80%] lg:w-1/2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
                 maxime consectetur ipsum dolorum veniam saepe quia vero numquam
                 reprehenderit facere.
@@ -22,8 +25,10 @@
                 Hire Me
             </a>
         </div>
-        <div class="w-[50%]">
-            <NuxtImg src="/images/hero-image.svg" width="100%" />
+        <div
+            class="w-3/4 mx-auto mb-8 hidden md:flex justify-center items-center lg:w-full"
+        >
+            <NuxtImg src="/images/hero-image.svg" class="" />
         </div>
     </div>
 </template>
