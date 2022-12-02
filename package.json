@@ -37,6 +37,6 @@
         "@nuxtjs/google-fonts": "^2.0.0",
         "@vueuse/core": "^9.6.0",
         "@vueuse/motion": "2.0.0-beta.12",
-        "vue3-carousel": "^0.2.5"
+        "swiper": "^8.4.5"
     }
 }
