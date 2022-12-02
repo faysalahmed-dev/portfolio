@@ -1,7 +1,13 @@
 <template>
-    <div class="flex-1 p-4 project-card rounded-2xl flex flex-col shadow-md">
-        <div>
-            <NuxtImg :src="project.imgUrl" />
+    <!-- flex-1 -->
+    <div
+        class="basis-full md:basis-[48%] lg:flex-1 md:flex-shrink-0 p-4 project-card rounded-2xl flex flex-col shadow-md"
+    >
+        <div class="pb-[66%] relative overflow-hidden">
+            <NuxtImg
+                :src="project.imgUrl"
+                class="w-full h-full absolute object-cover"
+            />
         </div>
         <h3 class="font-bold my-4 text-md flex-grow">{{ project.text }}</h3>
         <div class="space-x-5">

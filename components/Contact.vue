@@ -1,10 +1,15 @@
 <template>
     <section class="container mx-auto" id="contact">
         <SectionHeading>Get In Touch</SectionHeading>
-        <div class="flex w-[800px] mx-auto justify-center space-x-10">
-            <div class="space-y-4 text-center contact-link">
+        <!--  -->
+        <div
+            class="flex flex-col md:flex-row max-w-[800px] mx-auto justify-center md:space-x-10"
+        >
+            <div
+                class="flex md:flex-col space-x-4 md:space-x-0 text-sm justify-between md:justify-start md:space-y-4 text-center contact-link"
+            >
                 <a
-                    class="w-48 py-8 space-y-2 rounded-md flex items-center flex-col"
+                    class="py-6 w-32 space-y-1 rounded-md flex items-center flex-col"
                     href="mailto:fayalahmed.ctg146@outlook.com"
                 >
                     <svg
@@ -25,7 +30,7 @@
                 <a
                     href="https://www.linkedin.com/in/faysalahmedhridoy"
                     target="_blank"
-                    class="w-48 py-8 space-y-2 rounded-md flex items-center flex-col"
+                    class="py-6 w-32 space-y-2 rounded-md flex items-center flex-col"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -41,12 +46,11 @@
                         ></path>
                     </svg>
                     <span>LinkinDin</span>
-                    <span class="block text-sm mt-1"> Faysal Ahmed </span>
                 </a>
                 <a
                     href="https://wa.me/+8801997261058"
                     target="_blank"
-                    class="w-48 py-8 space-y-2 rounded-md flex items-center flex-col"
+                    class="py-6 w-32 space-y-2 rounded-md flex items-center flex-col"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -65,11 +69,16 @@
                     <span>WhatsApp</span>
                 </a>
             </div>
-            <form class="flex flex-col space-y-4 p-6 rounded-md" action="">
+            <!--  p-6 -->
+            <form
+                class="flex flex-col space-y-4 rounded-md mt-10 md:mt-0"
+                action=""
+            >
                 <label for="name">
                     Name:
+                    <!-- w-96 -->
                     <input
-                        class="block py-2 px-4 rounded-md w-96"
+                        class="block py-2 px-4 rounded-md w-full md:w-96"
                         type="text"
                         id="name"
                         name="name"
@@ -80,7 +89,7 @@
                     Email:
                     <input
                         type="text"
-                        class="block py-2 px-4 rounded-md w-96"
+                        class="block py-2 px-4 rounded-md w-full md:w-96"
                         id="email"
                         name="email"
                         placeholder="user@example.com"
@@ -89,15 +98,13 @@
                 <label for="message">
                     Message:
                     <textarea
-                        class="block w-full rounded-md py-2 px-4"
+                        class="block rounded-md py-2 px-4 w-full"
                         id="message"
                         rows="6"
                         placeholder="Your Message here..."
                     ></textarea>
                 </label>
-                <button class="block rounded-md py-2 bg-primary">
-                    Send Message
-                </button>
+                <button class="rounded-md py-2 bg-primary">Send Message</button>
             </form>
         </div>
     </section>

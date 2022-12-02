@@ -1,6 +1,7 @@
 <template>
+    <!-- px-10 -->
     <footer
-        class="container mx-auto rounded-t-3xl px-10 pb-8 pt-10 mt-10 bg-slate-900"
+        class="container mx-auto rounded-t-3xl pb-8 pt-10 mt-10 bg-slate-900"
     >
         <div class="flex justify-between mb-8">
             <h2 class="font-bold logo">Faysal Ahmed</h2>

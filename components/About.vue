@@ -1,17 +1,18 @@
 <template>
+    <!--   -->
     <section
         id="about-me"
-        class="max-w-[1100px] mx-auto rounded-[50px] py-10 px-16 about-section -mt-20 relative z-10"
+        class="py-10 md:px-8 rounded-[50px] about-section -mt-20 relative z-10 lg:px-16 lg:max-w-[1100px]"
     >
         <SectionHeading text="" margin="my-8">About Me</SectionHeading>
-        <div class="flex py-6">
-            <div class="flex-1 flex justify-center items-center">
-                <NuxtImg src="/images/faysalahmed.png" width="350" />
+        <div class="flex flex-col py-6 space-y-2 lg:flex-row">
+            <div class="flex justify-center items-center lg:flex-1">
+                <NuxtImg src="/images/faysalahmed.png" width="300" />
             </div>
-            <div class="flex-1 p-4">
-                <div class="flex justify-between">
+            <div class="p-4 lg:flex-1">
+                <div class="flex justify-between lg:space-x-2">
                     <div
-                        class="py-3 w-36 rounded-lg about-small-box text-center"
+                        class="py-3 w-24 sm:w-36 text-sm rounded-lg about-small-box text-center"
                     >
                         <svg
                             class="inline-block mb-2"
@@ -32,7 +33,7 @@
                         <p>3+ years</p>
                     </div>
                     <div
-                        class="py-3 w-36 rounded-lg about-small-box text-center"
+                        class="py-3 sm:w-36 text-sm rounded-lg about-small-box text-center"
                     >
                         <svg
                             class="inline-block mb-2"
@@ -50,7 +51,7 @@
                         <p>10 +</p>
                     </div>
                     <div
-                        class="py-3 w-36 rounded-lg about-small-box text-center"
+                        class="py-3 sm:w-36 text-sm rounded-lg about-small-box text-center"
                     >
                         <svg
                             class="inline-block mb-2"
@@ -74,15 +75,17 @@
                     globe to create high performance & rich interactive apps
                     that work across all platforms & devices.
                 </p>
-                <div class="space-x-6">
+                <!-- space-x-6 -->
+                <div class="space-x-3 text-center lg:text-left">
                     <a
                         target="_blank"
                         href="https://wa.me/+8801997261058"
-                        class="py-2 px-8 rounded-lg bg-primary font-bold"
+                        class="py-2 px-4 rounded-lg bg-primary font-bold"
                     >
+                        <!-- px-8  -->
                         Let's Talk
                     </a>
-                    <button class="py-2 px-8 rounded-lg bg-primary font-bold">
+                    <button class="py-2 px-4 rounded-lg bg-primary font-bold">
                         Download CV
                     </button>
                 </div>

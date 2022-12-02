@@ -1,7 +1,10 @@
 <template>
     <section id="service" class="container mx-auto">
         <SectionHeading text="what i will do">Services</SectionHeading>
-        <div class="flex space-x-8 max-w-[1100px] mx-auto">
+        <!-- space-x-8 -->
+        <div
+            class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 max-w-[1100px] mx-auto"
+        >
             <ServicesCard
                 title="Website Development"
                 :items="items.websiteDev"

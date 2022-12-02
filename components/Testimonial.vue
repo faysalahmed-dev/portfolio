@@ -1,12 +1,14 @@
 <template>
     <section class="container mx-auto">
-        <SectionHeading text="What Client Said About Me">
+        <SectionHeading text="What Client Said About Me" margin="my-10">
             Testimonial
         </SectionHeading>
-        <div class="w-8/12 mx-auto">
+        <!-- w-8/12 mx-auto -->
+        <div class="">
             <carousel :itemsToShow="1" :wrapAround="true" :transition="500">
                 <slide v-for="slide in slideItems" :key="slide.client">
-                    <div class="text-center p-16 w-5/6 rounded-md">
+                    <!--  w-5/6 -->
+                    <div class="text-center p-4 w-5/6 rounded-md">
                         <p class="mb-3 relative">
                             {{ slide.text }}
                         </p>

@@ -1,9 +1,13 @@
 <template>
-    <section id="skills" class="py-24 -mt-20 rounded-[50px]">
+    <!-- py-24 -->
+    <section id="skills" class="py-16 -mt-20 rounded-[50px] lg:py-24">
         <div class="container mx-auto">
             <SectionHeading text="What I Know"> My Skills </SectionHeading>
 
-            <div class="flex justify-between space-x-10 mx-auto max-w-[1100px]">
+            <!-- space-x-10 -->
+            <div
+                class="flex flex-col lg:flex-row justify-between space-y-6 mx-auto max-w-[1100px] lg:space-x-10 lg:space-y-0"
+            >
                 <div class="skill-box flex-1 rounded-[50px] p-10">
                     <h2 class="text-center font-bold mb-10">
                         Font End Development
