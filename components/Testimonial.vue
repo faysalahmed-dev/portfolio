@@ -3,12 +3,18 @@
         <SectionHeading text="What Client Said About Me" margin="my-10">
             Testimonial
         </SectionHeading>
-        <!-- w-8/12 mx-auto -->
-        <div class="">
-            <carousel :itemsToShow="1" :wrapAround="true" :transition="500">
-                <slide v-for="slide in slideItems" :key="slide.client">
-                    <!--  w-5/6 -->
-                    <div class="text-center p-4 w-5/6 rounded-md">
+        <!--  -->
+        <div class="lg:w-8/12 lg:mx-auto">
+            <swiper
+                :navigation="true"
+                :slides-per-view="1"
+                :allowTouchMove="true"
+                :loop="true"
+                :speed="500"
+                :modules="[Navigation]"
+            >
+                <swiper-slide v-for="slide in slideItems" :key="slide.client">
+                    <div class="text-center p-4 w-5/6 rounded-md mx-auto">
                         <p class="mb-3 relative">
                             {{ slide.text }}
                         </p>
@@ -17,20 +23,15 @@
                             - {{ slide.platform }}
                         </h4>
                     </div>
-                </slide>
-
-                <template #addons>
-                    <navigation />
-                    <pagination />
-                </template>
-            </carousel>
+                </swiper-slide>
+            </swiper>
         </div>
     </section>
 </template>
 <script setup lang="ts">
-import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation } from 'swiper';
+import 'swiper/css/navigation';
 const slideItems = [
     {
         text: '" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro suscipit accusamus incidunt error voluptas nulla, obcaecati, similique officiis aspernatur doloribus id commodi sapiente. Reprehenderit, fugiat ratione assumenda, officia nobis aspernatur facere laborum dolores incidunt, optio repellat eos rerum dignissimos ullam."',
@@ -55,9 +56,13 @@ const slideItems = [
     --vc-pgn-active-color: rgba(255, 255, 255, 0.808);
     --vc-pgn-background-color: rgba(255, 255, 255, 0.281);
 }
-.carousel__prev,
-.carousel__next {
-    color: rgba(255, 255, 255, 0.808);
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgba(255, 255, 255, 0.808) !important;
     /* --vc-pgn-background-color */
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px !important;
 }
 </style>
